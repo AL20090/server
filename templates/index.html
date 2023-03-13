@@ -4,7 +4,7 @@
     <head>
         <title>テストアプリ</title>
         <script>
-            const updateLux=async(url,element)=>{
+            const updatedistance=async(url,element)=>{
                 const sensorData=await fetch(url)
                 .then(response=>response.text())
                 const target=document.getElementByld(element)
@@ -12,10 +12,10 @@
             }
         </script>
     </head>
-    <body onLoad="updateLux('/lux','data')">
+    <body onLoad="updatedistance('/distance','data')">
         <center>
         <div id="data">test</div>
-        <input type="button" value="更新"onclick="updateLux('/lux','data')">
+        <input type="button" value="更新"onclick="updatedistance('/distance','data')">
         </center>
     </body>
 </html>
